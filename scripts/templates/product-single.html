@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Business Pro - Product</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    height: 900px;
+    overflow: hidden;
+}
+
+.header {
+    background: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+}
+
+.product-gallery {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.main-image {
+    width: 100%;
+    height: 400px;
+    background: #eee;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.thumb {
+    height: 80px;
+    background: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.thumb:hover {
+    opacity: 0.8;
+}
+
+.product-info h1 {
+    color: #2C3E50;
+    margin: 0 0 20px;
+}
+
+.price {
+    font-size: 32px;
+    color: #3498DB;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.variations {
+    margin: 30px 0;
+}
+
+.variation-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2C3E50;
+}
+
+.variation-options {
+    display: flex;
+    gap: 10px;
+}
+
+.option {
+    padding: 10px 20px;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.option:hover {
+    border-color: #3498DB;
+}
+
+.option.selected {
+    border-color: #3498DB;
+    background: #3498DB;
+    color: white;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.quantity input {
+    width: 60px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #eee;
+    border-radius: 5px;
+}
+
+.add-to-cart {
+    background: #3498DB;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.add-to-cart:hover {
+    background: #2980b9;
+}
+
+.product-meta {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+}
+
+.meta-item {
+    margin: 10px 0;
+    color: #666;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="logo">Business<span>Pro</span></div>
+        <nav>
+            <a href="#" style="color: #2C3E50; text-decoration: none; margin-left: 30px;">Shop</a>
+            <a href="#" style="color: #2C3E50; text-decoration: none; margin-left: 30px;">Categories</a>
+            <a href="#" style="color: #2C3E50; text-decoration: none; margin-left: 30px;">Sale</a>
+            <a href="#" style="color: #2C3E50; text-decoration: none; margin-left: 30px;">Account</a>
+            <div class="cart-icon" style="margin-left: 30px;">🛒<span class="cart-count">3</span></div>
+        </nav>
+    </header>
+
+    <div class="product-container">
+        <div class="product-gallery">
+            <div class="main-image"></div>
+            <div class="thumbnails">
+                <div class="thumb"></div>
+                <div class="thumb"></div>
+                <div class="thumb"></div>
+                <div class="thumb"></div>
+            </div>
+        </div>
+        <div class="product-info">
+            <h1>Premium Product Name</h1>
+            <div class="price">$199.99</div>
+            <p>High-quality product description with detailed features and benefits. Perfect for any business needs.</p>
+            
+            <div class="variations">
+                <div class="variation-label">Size</div>
+                <div class="variation-options">
+                    <div class="option">Small</div>
+                    <div class="option selected">Medium</div>
+                    <div class="option">Large</div>
+                </div>
+            </div>
+
+            <div class="quantity">
+                <span>Quantity:</span>
+                <input type="number" value="1" min="1">
+            </div>
+
+            <button class="add-to-cart">Add to Cart</button>
+
+            <div class="product-meta">
+                <div class="meta-item">SKU: PRO-001</div>
+                <div class="meta-item">Category: Premium</div>
+                <div class="meta-item">Tags: Featured, New</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html> 

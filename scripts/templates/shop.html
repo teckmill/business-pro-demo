@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Business Pro - Shop</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    height: 900px;
+    overflow: hidden;
+}
+
+.header {
+    background: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    color: #2C3E50;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #3498DB;
+    font-weight: 300;
+}
+
+.cart-icon {
+    position: relative;
+    font-size: 20px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #3498DB;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+
+.hero {
+    height: 400px;
+    background: linear-gradient(135deg, #2C3E50 0%, #3498DB 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+    animation: moveBackground 30s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-50%, -50%); }
+}
+
+.products {
+    padding: 40px;
+    background: #f8f9fa;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    height: 200px;
+    background: #eee;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image::before {
+    content: 'Sale!';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-title {
+    margin: 0 0 10px;
+    color: #2C3E50;
+}
+
+.product-price {
+    color: #3498DB;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.add-to-cart {
+    background: #3498DB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+    background: #2980b9;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="logo">Business<span>Pro</span></div>
+        <nav>
+            <a href="#" style="color: #2C3E50; text-decoration: none; margin-left: 30px;">Shop</a>
+            <a href="#" style="color: #2C3E50; text-decoration: none; margin-left: 30px;">Categories</a>
+            <a href="#" style="color: #2C3E50; text-decoration: none; margin-left: 30px;">Sale</a>
+            <a href="#" style="color: #2C3E50; text-decoration: none; margin-left: 30px;">Account</a>
+            <div class="cart-icon" style="margin-left: 30px;">🛒<span class="cart-count">3</span></div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div style="position: relative; z-index: 1;">
+            <h1 style="font-size: 48px; margin: 0 0 20px;">Summer Sale</h1>
+            <p style="font-size: 20px; opacity: 0.9; margin-bottom: 30px;">Up to 50% off on selected items</p>
+            <button style="background: white; color: #2C3E50; border: none; padding: 15px 40px; border-radius: 30px; font-weight: bold;">Shop Now</button>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Premium Product</h3>
+                    <div class="product-price">$99.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Featured Item</h3>
+                    <div class="product-price">$149.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Best Seller</h3>
+                    <div class="product-price">$199.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html> 

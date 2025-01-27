@@ -1,0 +1,9 @@
+{
+  "name": "business-pro-demo",
+  "scripts": {
+    "generate": "node scripts/generate.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.1.1"
+  }
+} 

@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Generated files
+assets/images/*.jpg
+assets/images/*.png
+!assets/images/preview.jpg
+
+# OS files
+.DS_Store
+Thumbs.db 

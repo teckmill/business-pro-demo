@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Business Pro - Agency</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    height: 900px;
+    overflow: hidden;
+}
+
+.header {
+    background: transparent;
+    padding: 20px 40px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.hero {
+    height: 100vh;
+    background: #2C3E50;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-grid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    opacity: 0.1;
+    background: white;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 150px 80px;
+}
+
+.hero-title {
+    font-size: 72px;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    opacity: 0.8;
+    margin: 30px 0;
+    max-width: 500px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-top: 60px;
+}
+
+.portfolio-item {
+    aspect-ratio: 1;
+    background: #3498DB;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(44, 62, 80, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="logo">Business<span>Pro</span></div>
+        <nav>
+            <a href="#" style="color: white; text-decoration: none; margin-left: 30px;">Work</a>
+            <a href="#" style="color: white; text-decoration: none; margin-left: 30px;">Services</a>
+            <a href="#" style="color: white; text-decoration: none; margin-left: 30px;">About</a>
+            <a href="#" style="color: white; text-decoration: none; margin-left: 30px;">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Creative<br>Solutions</h1>
+            <p class="hero-subtitle">Award-winning digital agency crafting beautiful & unique experiences</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="overlay">Project 01</div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="overlay">Project 02</div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="overlay">Project 03</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html> 

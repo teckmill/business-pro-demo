@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Business Pro - Blog Single</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    height: 900px;
+    overflow: hidden;
+}
+
+.header {
+    background: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.post-hero {
+    height: 400px;
+    background: linear-gradient(135deg, #2C3E50 0%, #3498DB 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 200px;
+}
+
+.post-meta {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.post-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    padding: 60px 80px;
+}
+
+.post-body {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+    display: grid;
+    gap: 30px;
+}
+
+.widget {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.widget-title {
+    margin: 0 0 20px;
+    color: #2C3E50;
+}
+
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+.recent-posts {
+    display: grid;
+    gap: 15px;
+}
+
+.recent-post {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.recent-post-image {
+    width: 60px;
+    height: 60px;
+    background: #eee;
+    border-radius: 5px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="logo">Business<span>Pro</span></div>
+        <nav>
+            <a href="#" style="color: #2C3E50; text-decoration: none; margin-left: 30px;">Blog</a>
+            <a href="#" style="color: #2C3E50; text-decoration: none; margin-left: 30px;">Categories</a>
+            <a href="#" style="color: #2C3E50; text-decoration: none; margin-left: 30px;">About</a>
+            <a href="#" style="color: #2C3E50; text-decoration: none; margin-left: 30px;">Contact</a>
+        </nav>
+    </header>
+
+    <section class="post-hero">
+        <div>
+            <span style="background: #3498DB; padding: 5px 15px; border-radius: 20px; font-size: 12px;">Business Strategy</span>
+            <h1 style="font-size: 48px; margin: 20px 0;">10 Proven Strategies for Business Growth in 2023</h1>
+            <div class="post-meta">
+                <span>By John Smith</span>
+                <span>June 15, 2023</span>
+                <span>5 min read</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="post-content">
+        <main class="post-body">
+            <p style="font-size: 18px; line-height: 1.8; color: #666;">In today's rapidly evolving business landscape, staying ahead of the competition requires a strategic approach to growth and innovation...</p>
+            <div style="height: 200px; background: #eee; margin: 30px 0; border-radius: 10px;"></div>
+            <h2 style="color: #2C3E50;">1. Focus on Customer Experience</h2>
+            <p style="line-height: 1.8; color: #666;">The key to sustainable business growth lies in delivering exceptional customer experiences...</p>
+        </main>
+        
+        <aside class="sidebar">
+            <div class="widget">
+                <h3 class="widget-title">Popular Tags</h3>
+                <div class="tag-cloud">
+                    <span class="tag">Business</span>
+                    <span class="tag">Strategy</span>
+                    <span class="tag">Growth</span>
+                    <span class="tag">Marketing</span>
+                    <span class="tag">Technology</span>
+                </div>
+            </div>
+            <div class="widget">
+                <h3 class="widget-title">Recent Posts</h3>
+                <div class="recent-posts">
+                    <div class="recent-post">
+                        <div class="recent-post-image"></div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 14px; color: #2C3E50;">Digital Marketing Trends</h4>
+                            <span style="font-size: 12px; color: #666;">June 12, 2023</span>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="recent-post-image"></div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 14px; color: #2C3E50;">AI in Business</h4>
+                            <span style="font-size: 12px; color: #666;">June 10, 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
+</body>
+</html> 
